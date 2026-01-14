@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-fondo: #ffffff;
+  --color-texto: #000000;
+  --color-texto-secundario: #828485;
+  --color-borde: #dddddd;
+  --font-family: 'Roboto', sans-serif;
+  --boton: #A491D2 
+}
+
+body {
+  display: flex;
+  font-family: var(--font-family);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%; 
+  color: var(--color-texto);
+  font-weight: 300;
+}
+
+.container p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #333333;
+  max-width: 550px;
+  line-height: 1.4;
+   text-align: center;    
+
+}
+
+.container-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 1px;
+}
+
+menu {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-fondo);
+  width: 60vh;
+  cursor: pointer;
+  border: 1px solid var(--color-borde); 
+}
+
+.boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 200px;
+  height: 45px;
+  margin: 20px auto;
+  background-color: var(--boton); 
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid var(--color-borde);
+}
+
+.boton:hover {
+  background-color: #CDC3E6;
+  transition: background-color 0.3s ease; 
+}
+
+.profile-card, .user-card {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--color-borde);
+  border-top: 1px solid var(--color-borde);
+}
+
+.profile-card {
+  gap: 12px;
+  padding: 15px 20px;
+}
+
+.user-card {
+  gap: 20px;
+  padding: 5px 0;
+  justify-content: space-between;
+  border-width: 0 0 2px 0; 
+  
+}
+
+.profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-name {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+
+.profile-text {
+  font-size: 14px;
+  color: var(--color-texto-secundario);
+}
+
+.icons {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 10px;
+  font-size: 18px;
+  padding: 10px 0;
+  font-weight: bold;
+  color: var(--color-texto-secundario);
+  margin-right: 20px;
+}
+
+.user-img {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.chat-img {
+  width: 250px;
+  height: auto;
+  margin: 0 0 20px 0 
+}
